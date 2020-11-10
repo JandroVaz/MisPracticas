@@ -5,30 +5,23 @@
  */
 package MisPracticas;
 
-import java.util.Scanner;
-
 /**
  *
  * @author MARTOTITA
  */
-public class Multiplicacion {
+public class MuestrasLosNumeros {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner s=new Scanner(System.in);
+        //Muestra los números del 320 al 160, contando de 20 en 20 hacia atrás
+        //utilizando un bucle for.
         
-        System.out.println("Multiplicación de números, dime los 2 números que quires multiplicar.");
-        int mult1 = s.nextInt();
-        int mult2 = s.nextInt();
-        int total=0;
-        for (int i = 1; i <= mult2; i++) {
-            total=total+mult1;
+        for (int i = 320; i >= 160; i-=20) {
+            System.out.println(i);
         }
-        
-        System.out.println("Resultado= "+total);
     }
     
 }

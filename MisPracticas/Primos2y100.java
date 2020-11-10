@@ -11,9 +11,7 @@ import java.util.Scanner;
  *
  * @author MARTOTITA
  */
-
-
-public class LaletraL {
+public class Primos2y100 {
 
     /**
      * @param args the command line arguments
@@ -21,22 +19,12 @@ public class LaletraL {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner s=new Scanner(System.in);
-        int h;
-        do {            
-            System.out.println("Dame la altura");
-            h = s.nextInt();
-        } while ((h==0)||(h<0));
+        //Muestra por pantalla todos los números primos entre 2 y 100, ambos incluidos.
         
-        for (int i = 1; i < h; i++) {
-            System.out.print("*");
-            for (int j = 0; j < (h/2)+1; j++) {
-                System.out.print(" ");
+        for (int i = 2; i <= 100; i++) {
+            if((i%2)==0){
+                System.out.println(i);
             }
-            System.out.println("*");
-        }
-        System.out.print(" ");
-        for (int i = 0; i < (h/2)+1; i++) {
-            System.out.print("*");
         }
     }
     

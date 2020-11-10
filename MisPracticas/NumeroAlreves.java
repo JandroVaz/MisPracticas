@@ -11,24 +11,29 @@ import java.util.Scanner;
  *
  * @author MARTOTITA
  */
-public class Multiplicacion {
+public class NumeroAlreves {
 
     /**
      * @param args the command line arguments
      */
+    /*Realiza un programa que pida un número por teclado y que luego muestre ese
+número al revés*/
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner s=new Scanner(System.in);
         
-        System.out.println("Multiplicación de números, dime los 2 números que quires multiplicar.");
-        int mult1 = s.nextInt();
-        int mult2 = s.nextInt();
-        int total=0;
-        for (int i = 1; i <= mult2; i++) {
-            total=total+mult1;
+        System.out.println("Deme un número");
+        int num1 = s.nextInt();
+        int num=num1;
+        int vuelta =0;
+        
+        while (num>0){
+        vuelta=(vuelta*10)+(num%10);
+        
+        num/=10;
         }
         
-        System.out.println("Resultado= "+total);
+        System.out.println("El número dado "+num1+" dado la vuelta es "+vuelta);
     }
     
 }

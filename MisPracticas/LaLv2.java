@@ -11,9 +11,7 @@ import java.util.Scanner;
  *
  * @author MARTOTITA
  */
-
-
-public class LaletraL {
+public class LaLv2 {
 
     /**
      * @param args the command line arguments
@@ -21,22 +19,17 @@ public class LaletraL {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner s=new Scanner(System.in);
-        int h;
-        do {            
-            System.out.println("Dame la altura");
-            h = s.nextInt();
-        } while ((h==0)||(h<0));
         
-        for (int i = 1; i < h; i++) {
-            System.out.print("*");
-            for (int j = 0; j < (h/2)+1; j++) {
-                System.out.print(" ");
-            }
+        System.out.println("Ejercicios de la dibujar una L\nDeme la altura= ");
+        int h = s.nextInt();
+        
+        for (int i = 0; i < h-1; i++) {
             System.out.println("*");
         }
-        System.out.print(" ");
-        for (int i = 0; i < (h/2)+1; i++) {
-            System.out.print("*");
+        for (int i = 0; i < (h/2); i++) {
+            for (int j = 0; j < (h/2)+1; j++) {
+                System.out.print("*");
+            }
         }
     }
     

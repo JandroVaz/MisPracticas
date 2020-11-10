@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author MARTOTITA
  */
-public class Multiplicacion {
+public class ProgramaDigitos {
 
     /**
      * @param args the command line arguments
@@ -20,15 +20,15 @@ public class Multiplicacion {
         // TODO code application logic here
         Scanner s=new Scanner(System.in);
         
-        System.out.println("Multiplicación de números, dime los 2 números que quires multiplicar.");
-        int mult1 = s.nextInt();
-        int mult2 = s.nextInt();
-        int total=0;
-        for (int i = 1; i <= mult2; i++) {
-            total=total+mult1;
+        System.out.println("Deme un número= ");
+        int num = s.nextInt();
+        int cont=1;
+        while (num>10) {            
+            num/=10;
+            cont++;
         }
         
-        System.out.println("Resultado= "+total);
+        System.out.println("El número dado tiene "+cont+" digitos");
     }
     
 }
